@@ -1,7 +1,6 @@
-<h1>executar o json-server para carregar a vitrine <br> Json-server --watch ga.json</h1>
+https://welysonf5.github.io/Alura-Geek--Loja-projeto-Frontend/
+<h1>executar o json-server para carregar a vitrine  [Json-server --watch ga.json]</h1>
 ![alt text](image.png)<br>
-<h1>verificar o powershell: </h1><br>
-<h1>
 O projeto funciona: adicionar produtos: titulo, valor e imagem e carregalos e excluilos da pagina
 </h1>
 <h2> 
