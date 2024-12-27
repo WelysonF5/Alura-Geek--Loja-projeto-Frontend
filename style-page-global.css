@@ -1,0 +1,262 @@
+body {
+    margin: 0 0 0 0;
+    font-family: 'Press Start 2P', cursive;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #f4f4f4;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+/*Cabeçalho(inicio)*/
+.head_cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+    height: 70px;
+    width: 100%;
+    background-color: #8c0375;
+}
+
+.head_cabecalho img {
+    cursor: pointer;
+}
+
+.texto_cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+}
+
+.span_text_geek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #0331bc;
+}
+
+.heart_Cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 10px; */
+    
+}
+/*Cabeçalho(fim)*/
+
+
+/*Corpo Principal(inicio)*/
+.main_container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 140px);    
+    box-sizing: border-box;
+    background-color: white;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+/*Divisão maior(inicio)*/
+.container_view_product_list {
+    width: 60vw;
+    /* border: 2px solid black; */
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    margin-left: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/*Divisão maior(fim)*/
+
+/*Divisão menor(inicio)*/
+.container_add_product {
+    background-color: #fff;
+    border-radius: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+    padding: 20px;
+    margin-top: 25px;
+    margin-right: 25px;
+    width: auto; 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#8c0375;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    gap: 30px;
+
+}
+
+/*Formulario de dados(inicio)*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/*Formulares de Título e Valor*/
+input[type="text"],
+input[type="number"]{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 5px solid #8c0375;
+    border-radius: 120px;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: #0331bc;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+
+
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: #974f8b;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+}
+
+.input[type="text"]:focus,
+.input[type="number"]:focus {
+    outline: none;
+    color: #0331bc;
+
+}
+
+/*Botão de Carregar imagem*/
+input[type="file"]{
+    display: none;
+}
+
+.custom_file_upload {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #974f8b;
+    border-radius:  120px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid #8c0375;
+    transition: background-color 0.3s;
+    font-family: 'Press Start 2P', cursive;
+
+    
+}
+
+.botao_enviar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0A9421;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    cursor: pointer;
+    font-size: 20px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+}
+
+.botao_enviar svg{
+    margin-left: 5px;
+    border-radius: 150px;
+    height: 200px;
+    width: 100px;
+
+
+}
+
+
+.botao_enviar:hover {
+    background-color: #0331bc;
+    transition: 5s;
+}
+
+/*fórmulario de dados*/
+/*Divisão menor(fim)*/
+/*Divisão maior(fim)*/
+/*Corpo principal (fim)*/
+
+
+
+/*Rodapé(inicio)*/
+.foot_rodape {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+    height: 70px;
+    width: 100%;
+    background-color: #8c0375;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.texto_rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  white;
+}
+
+.name_dev {
+    margin-left: 15px;
+    color:#0331bc;
+}
+
+.name_dev {
+    margin-left: 15px;
+    color:#0331bc;
+}
+/*rodapé (fim)*/
+
+/* Estilos Responsivos */ 
+@media (max-width: 800px) { 
+    .main_container { 
+        flex-direction: column; 
+        justify-content: flex-start; 
+    } 
+    .container_add_product {
+         width: 100%; 
+         margin: 0; 
+         order: -1; /* Coloca a div adicionar produto no topo */ 
+        } 
+        .container_view_product_list {
+            width: 100%; 
+            margin: 0; 
+            margin-top: 20px; 
+            border-bottom-left-radius: 20px; 
+            border-bottom-right-radius: 20px; 
+        } 
+        .product {
+             width: 100%; 
+             margin: 10px 0;
+}
+}

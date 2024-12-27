@@ -1,0 +1,37 @@
+{
+  "produtos": [
+    {
+      "titulo": "Google Research",
+      "valor": "R$ 100",
+      "imagem": "./imgs/produto1.jpg"
+    },
+    {
+      "titulo": "Edge Research",
+      "valor": "R$ 200",
+      "imagem": "./imgs/produto2.jpg"
+    },
+    {
+      "titulo": "Download Torrnets",
+      "valor": "R$ 300",
+      "imagem": "./imgs/produto3.jpg"
+    },
+    {
+      "id": "1735230415394",
+      "titulo": "Game Boy Classic",
+      "valor": "4500",
+      "imagem": "./imgs/Game Boy Classic.jpg"
+    },
+    {
+      "id": "1735230840060",
+      "titulo": "Jinx",
+      "valor": "890",
+      "imagem": "./imgs/jinx.jpg"
+    },
+    {
+      "id": "1735230932702",
+      "titulo": "Stormtropper",
+      "valor": "450",
+      "imagem": "./imgs/stormtrooper.jpg"
+    }
+  ]
+}

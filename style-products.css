@@ -1,0 +1,113 @@
+.hidden-input{
+    position: absolute;
+    left: -9999px;
+}
+
+.product {
+    /* border: 1px solid #ddd; */
+    /* border-radius: 30px; */
+    padding: 16px;
+    margin: 10px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.5s ease, box-shadow 0.2s ease-in-out, background-color 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px #8c0375;
+    background-color: white;
+    border-radius: 30px;
+
+}
+
+.product p {
+    position: relative;
+    overflow: hidden;
+    color: transparent;
+    transition: color 0.3s;
+}
+
+.product:hover p {
+    color: #daa520;
+    transition: 1.5s;
+    font-weight: bold;
+}
+
+.product p::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    left: 100%;
+    background: linear-gradient(90deg, transparent, rgba(218, 165, 32, 0.5), transparente);
+    transition: left 0.5s ease-out, right 0.5 ease-out;
+}
+
+.product:hover p::before {
+    left: 0;
+    right: 0;
+}
+
+
+.product img {
+    /* max-width: 150px; */
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.container_view_product_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.product p{
+    font-size: 1em;
+    color: #777;
+    margin: 5px 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Icone de lixeira(inicio)*/
+.trash-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: red;    
+    mask: url('./trash-icon.svg');
+    display: none;
+    cursor: pointer;
+    fill:white;
+    mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgZmlsbD0iIzAwMDAwMDAiPjxwYXRoIGQ9Ik0gMTAgMiBMIDkgMyBMIDUgMyBMIDUgNSBMIDE5IDUgTCAxOSAzIEwgMTUgMyBMIDE0IDIgTCAxMCAyIHogTSA1IDcgTCA1IDIwIEMgNSAyMS4xMDQgNS44OTYgMjIgNyAyMiBMIDE3IDIyIEMgMTguMTA0IDIyIDE5IDIxLjEwNCAxOSAyMCBMIDE5IDcgTCA1IDcgeiBNIDcgOSBMIDkgOSBMIDkgMTkgTCA3IDE5IEwgNyA5IHogTSAxMSA5IEwgMTMgOSBMIDEzIDE5IEwgMTEgMTkgTCAxMSA5IHogTSAxNSA5IEwgMTcgOSBMIDE3IDE5IEwgMTUgMTkgTCAxNSA5IHoiLz48L3N2Zz4='); 
+    -webkit-mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgZmlsbD0iIzAwMDAwMDAiPjxwYXRoIGQ9Ik0gMTAgMiBMIDkgMyBMIDUgMyBMIDUgNSBMIDE5IDUgTCAxOSAzIEwgMTUgMyBMIDE0IDIgTCAxMCAyIHogTSA1IDcgTCA1IDIwIEMgNSAyMS4xMDQgNS44OTYgMjIgNyAyMiBMIDE3IDIyIEMgMTguMTA0IDIyIDE5IDIxLjEwNCAxOSAyMCBMIDE5IDcgTCA1IDcgeiBNIDcgOSBMIDkgOSBMIDkgMTkgTCA3IDE5IEwgNyA5IHogTSAxMSA5IEwgMTMgOSBMIDEzIDE5IEwgMTEgMTkgTCAxMSA5IHogTSAxNSA5IEwgMTcgOSBMIDE3IDE5IEwgMTUgMTkgTCAxNSA5IHoiLz48L3N2Zz4='); 
+}
+
+
+
+.product:hover .trash-icon {
+    display: block;
+}
+
+
+/*Icone de lixeira(fim)*/

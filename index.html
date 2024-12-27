@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek Vitrine</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="./style-page-global.css" defer>
+    <link rel="stylesheet" href="./style-products.css" defer>
+
+</head>
+<body>
+    <!--Cabeçalho (inicio)-->
+    <header class="head_cabecalho">
+        <div class="heart_cabecalho">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="#ff0000"> 
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/> 
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="#ff0000"> 
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/> 
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="#ff0000"> 
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/> 
+            </svg> 
+        </div>   
+        <div class="texto_cabecalho">
+            Alura <span class="span_text_geek">Geek</span>
+        </div>
+    </header>
+    <!--Cabeçaho (fim)-->
+
+    <!--Corpo Principal(inicio)-->
+    <main class="main_container">
+        <div class="container_view_product_list"></div>
+        <div class="container_add_product">Adicionar produtos:
+            <form id="add_product_form_id">
+                <!-- <label for="titulo">Título:</label> -->
+                <input type="text" id="titulo-id" name="titulo" placeholder="Título" required data-titulo>
+
+                <!-- <label for="valor">Valor:</label> -->
+                <input type="number" id="valor-id" name="valor" placeholder="Valor (R$)" required data-valor>
+
+                <button type="button" class="custom_file_upload" onclick="document.getElementById('imagem-id').click();">Escolha o local da imagem:</button>
+                <input type="file" id="imagem-id" name="imagem" accept="image/*" required data-imagem class="hidden-input">
+
+                <button type="submit" class="botao_enviar" data-botao-enviar>Enviar 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="#0A9421"> 
+                        <rect width="50" height="50" fill="#0A9421"/> 
+                        <rect x="5" y="5" width="4" height="4" fill="#000000"/> 
+                        <rect x="15" y="5" width="4" height="4" fill="#000000"/> 
+                        <rect x="9" y="11" width="2" height="6" fill="#000000"/> 
+                        <rect x="13" y="11" width="2" height="6" fill="#000000"/> 
+                        <rect x="9" y="17" width="6" height="2" fill="#000000"/>                
+                </svg>
+            </button>
+            </form>
+        </div>
+    </main>
+    <!--Corpo principal(fim)-->
+
+    <!--Rodapé(inicio)-->
+    <footer class="foot_rodape">
+        <div class="texto_rodape">
+            &copy; 2025, Desenvolvido por<span class="name_dev">Welyson David</span>
+        </div>
+    </footer>
+    <!--Rodapé(fim)-->
+
+
+
+
+
+
+
+    <script src="./view-list-ga.js" defer></script>
+</body>
+</html>
